@@ -1,0 +1,59 @@
+#include<iostream>
+#include<cmath>
+
+using std::cin;
+using std::cout;
+using std::endl;
+
+void Boubblesort3(int *a, int size)
+{
+	for (int i = size - 1; i >0; i--)
+	{
+		int LastIndex = 1;
+		for (int j = 1; j <= i; j++)
+		{
+			if (a[j]<a[j - 1]) {
+				int tmp = a[j];
+				a[j] = a[j - 1];
+				a[j - 1] = tmp;
+				LastIndex = j;
+			}
+		}
+
+		i = LastIndex;
+	}
+}
+
+
+int main()
+{
+	int n = 0;
+	cin >> n;
+	if (n<1 || n>pow((double)10, 5))
+	{
+		return -1;
+	}
+	//int a[9] = { 1, 2, 3, 4, 5, 6, 7, 8 };
+	int *a = new int(3 * n);
+	for (int i = 0; i < 3 * n;)
+	{
+		int temp = 0;
+		cin >> temp;
+
+		
+		a[i] = temp;
+		i++;
+	}
+	Boubblesort3(a, 3 * n);
+	int begin = n;
+	int end = n*3;
+	long long int t = 0;
+	for (int i = begin; i < end; )
+	{
+		t+= a[i];
+        i++;
+        i++;
+	}
+	cout << t<<endl;
+	return 0;
+}
