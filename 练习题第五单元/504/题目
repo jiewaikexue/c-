@@ -1,0 +1,12 @@
+(a)
+    while(string::iterator iter!=s.end()){/**/}
+
+(b)
+    while(bool status =find (word)){/**/
+        if(!status)
+        {
+            /***/
+        }
+        }
+
+         

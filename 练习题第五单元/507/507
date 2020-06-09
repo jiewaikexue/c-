@@ -1,0 +1,39 @@
+
+
+
+
+
+(a) if(ival1!=ival2)
+ival1=ival2
+else ival1=ival2=0;
+
+(b)
+if(int ival =get_value())
+    minval=ival;
+    occcurs=1;
+
+(c)
+
+if(int ival=get_value())
+    cout<<"ival="<<ival<<endl;
+    if(!ival)
+    cout<<"ival=0\n";
+
+(d)
+
+if(ival=0)
+    ival=get_value();
+
+
+
+
+
+    修改：
+    (a)
+    断个：
+(b)
+    加大括号算了，主要是这题他也没给上下文。
+(c)
+    ival超过作用域了 if里面要想用ival就要重新声明
+(d)
+    赋值不要写成等于
