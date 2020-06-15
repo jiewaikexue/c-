@@ -1,0 +1,16 @@
+
+double calc(double)
+int count(const string&,char)
+int sum(vector<int>::iterator,vector<int>::iterator,int)
+vector<int> vec(10);
+
+(a)calc(23.4,55.1)
+(b)count("abcda","a")
+(c)calc(66)
+(d)sum(vec.begin(),vec.end(),3.8)
+
+(a)错误：无法重载。因为参数的个数不匹配
+(b)能用，截断只有一个a
+(c) 合法，int直接提升成double
+（d）合法 double会截断成为int
+    但是这几个都不是精确匹配
