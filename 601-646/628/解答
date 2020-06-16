@@ -1,0 +1,7 @@
+这东西就是列表初始化的本质
+
+因为
+string str{xxx，xxx}
+
+可以写成
+string str({xxx，xxx})

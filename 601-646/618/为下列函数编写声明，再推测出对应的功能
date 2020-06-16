@@ -1,0 +1,9 @@
+(a)名为compare的函数，返回值是bool，两个参数都是matrix类的引用
+
+(b)名为change_val的函数,返回vector的迭代器，有两个参数：一个是int，另一个是vector<int>的迭代器
+
+(a)
+
+    bool compare)(const matrix &,const matrix&)
+(b)
+    vector::iterator change_val(int a,vector<int> ::iterator b)

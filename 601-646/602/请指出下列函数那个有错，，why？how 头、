@@ -1,0 +1,24 @@
+
+
+
+
+
+
+(a)
+
+    int f(){
+        string s;
+        return s;
+    }
+    返回值类型不匹配：
+
+(b)
+    f2(int i){    } 
+    错误：没有规定返回值：
+(c)
+    in  calc（int v1, int v1)
+
+    错误：参数同名：
+(d)
+    double squble(double x)return x*x
+    错误：没有大括号

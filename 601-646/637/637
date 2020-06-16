@@ -1,0 +1,15 @@
+
+
+
+
+string &func()[10]
+
+//使用类型别名
+typedef string a[10]
+ a &func()
+ //使用位置返回值类型
+auto func() ->string (&)[10]
+//使用decltype关键字
+
+string str[10]
+decltype(str)&func()
