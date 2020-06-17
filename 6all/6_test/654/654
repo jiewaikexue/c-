@@ -1,0 +1,7 @@
+
+两个int形参 ：func（int，int）；
+返回值类型也是int：auto func（int，int）->int；
+然后声明一个对象令其元素指向该函数的指针：
+        vector<decltypr(func)*>
+        vector<int(*) (int,int)>
+    

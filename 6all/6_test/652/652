@@ -1,0 +1,20 @@
+
+
+
+
+
+
+已知有如下声明
+
+void manip(int,int)
+double dobj
+请指出下列调用中每个类型转换的等级
+manip('a','z')
+manip(55.4,dobj)
+
+
+
+
+manip('a','z')//整形提升 属于第三级
+manip(55.4,dobj)//算数类型转换||指针类型转换，属于第四级
+
