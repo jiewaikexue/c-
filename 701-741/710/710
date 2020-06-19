@@ -1,0 +1,10 @@
+ 
+ SaleData a;
+ SaleData b;
+ if(a.Read(b.Read(cin,b),a));
+ 
+ 701的read的返回值类型是引用类型，所以这条if语句的作用可以检验
+ 先对b输入，倏然完成之后再对a进行输入
+ if 检查的是最后的cin
+     ---暨 if（cin）
+
