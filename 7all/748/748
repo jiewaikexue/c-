@@ -1,0 +1,14 @@
+SalesData()=default;//ÒªÇóÉú³ÉÒ»¸öÄ¬ÈÏµÄ×î¼òµ¥µÄ¹¹Ôìº¯Êý
+SalesData(const string &book_note):book_note_(book_note){}
+SalesData(const string &book,const unsigned num,const double sellp,const double salep)
+SalesData(istream &is)
+
+
+
+
+string null_isbn("9-9999-999-9");
+SalesData item("9-9999-999-9");
+SalesData item(null_isbn);
+
+
+完全没问题

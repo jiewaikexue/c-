@@ -1,0 +1,2 @@
+
+SalesData(std::istream &is=std::cin){is>>*this;}

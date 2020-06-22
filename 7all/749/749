@@ -1,0 +1,24 @@
+
+SalesData i;
+string s;
+
+
+//函数逻辑
+SalesData& Combine(const SalesData& rhs)   
+{
+    units_sold_+=rhs.units_sold_;
+    sale_price_=(rhs.sale_price_*rhs.units_sold_+sale_price_*units_sold_)/(rhs.units_sold_+units_sold_);
+
+    if(selling_price_!=0)
+        discount_=sale_price_/selling_price_;
+    return *this;
+}
+//函数声明
+SalesData &combine( SalesData rhs);
+SalesData &combine( SalesData & rhs);
+SalesData &combine( const SalesData &rhs )const;
+//函数调用
+i.combine(s);
+第一个声明是可以的：
+        借助拷贝构造直接生成了一个类
+
